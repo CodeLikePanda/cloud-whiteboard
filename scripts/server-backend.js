@@ -37,7 +37,7 @@ export default function startBackendServer(port) {
     var io = new Server(server, { path: "/ws-api" });
     WhiteboardInfoBackendService.start(io);
 
-    console.log("socketserver running on port:" + port);
+    console.log("socketserver running on port:" + port +" (Backend services)");
 
     const { accessToken, enableWebdav } = config.backend;
 
